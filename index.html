@@ -19,6 +19,7 @@
     <main class="container">
         <section>
             <h2>Lista de nomes</h2>
+            <!-- INÍCIO TABELA -->
             <table>
                 <tr>
                     <th>Nome</th>
@@ -32,10 +33,50 @@
                     <td class="info-altura">1.53</td>
                     <td class="info-imc"></td>
                 </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Sandro</td>
+                    <td class="info-peso">79</td>
+                    <td class="info-altura">1.64</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Gabriela</td>
+                    <td class="info-peso">32</td>
+                    <td class="info-altura">1.34</td>
+                    <td class="info-imc"></td>
+                </tr>
+                <tr class="pacientes">
+                    <td class="info-nome">Isabela</td>
+                    <td class="info-peso">32</td>
+                    <td class="info-altura">1.34</td>
+                    <td class="info-imc"></td>
+                </tr>
             </table>
+            <button id="calcula-imcs" class="botao">Calcular IMC</button>
+        </section>
+        <!-- ADICIONAR PESSOA -->
+        <section>
+            <h2>Adicionar nova pessoa</h2>
+            <form>
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="campo-nome" placeholder="Digite seu nome">
+                </fieldset>
+                <fieldset class="campo-medio">
+                    <label for="peso">Peso:</label>
+                    <input type="text" id="campo-peso" placeholder="Digite seu peso">
+                </fieldset>
+                <fieldset class="campo-medio">
+                    <label for="altura">Altura:</label>
+                    <input type="text" id="campo-altura" placeholder="Digite a sua altura">
+                </fieldset>
+                <button id="adicionar-paciente" class="botao bto-principal">Adcionar</button>
+            </form>
         </section>
     </main>
 
+
+    <script src="calcula-imc.js"></script>
 </body>
 
 </html>
